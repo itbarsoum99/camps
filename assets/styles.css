@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0;
+  background-color: #e8eaed;
+  color: #202124;
+}
+
+.home {
+  background-image: url(/assets/smoke.png);
+  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html:hover {
+  cursor: default;
+}
+
+
+::selection {
+  background-color: transparent;
+}
+
+.code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 38px;
+}
+
+.box{
+	width: 800px; 
+	position: relative;
+	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
+  padding: 30px;
+  min-height: 176px;
+  opacity: 1;
+  background-color: #e8eaed;
+}
+
+.content {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+}
+
+p:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  caret-color: transparent;
+}
+
+.collapsible {
+  background-color: #202124;
+  color: #e8eaed;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.3s;
+  font-size: 22px !important;
+  font-weight: 400;
+}
+
+.collapsible h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+} 
+
+.buttonactive, .collapsible:hover {
+  background-color: #161619;
+}
+
+.fill {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '+';
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.buttonactive:after {
+  content: '-'; 
+  font-weight: bold;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+.buttonactive{
+  background-color: #161619;
+}
+
+td {
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  background-color: #202124;
+  color: #e8eaed;
+  border: 3px solid transparent;
+  width: 33%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300 !important;
+  font-style: italic;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 10em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  line-height: 90%;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3, h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+}
+
+hl {
+  background-color: #ffff0085;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #00688b !important;
+  color: white !important;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #222;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 8em;
+  }
+  .box{
+	  width: 700px !important; 
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 7em;
+  }
+  table, tbody, th, td, tr, thead {
+    display: block;
+  }
+  td {
+    border: none;
+    position; relative;
+    white-space: normal;
+    text-align:left;
+    width: 94%;
+    border-bottom: 2px solid #e8eaed;
+  }
+  .box {
+    width: 600px !important;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 6em;
+  }
+  #join {
+    font-size: 22px;
+  }
+  .box {
+    width: 500px !important;
+    min-height: 226px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5em;
+  }
+  .box {
+    width: 450px !important;
+    padding: 15px !important;
+  }
+}
+
+@media (max-width: 515px) {
+  .box {
+    width: 350px !important;
+    min-height: 276px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hom {
+    display: none;
+  }
+  .som {
+    display: block;
+  }
+}
+
+@media (pointer:coarse) {
+  h1 { font-size: 10em; }
+  h2 { font-size: 5em; }
+  h3, h4 { font-size: 3em; }
+  h5 {
+    font-size: 2.5em; 
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  #join { font-size: 40px; }
+  .box { width: 75vw !important; }
+  .hom { display: none; }
+  .som { display: block; }
+  .logo { display: none; }
+  .entrybox { font-size: 30px; }
+  .sub {
+    font-size: 30px;
+    padding: 16.5px;
+    border: 8px solid #00688b;
+  }
+  .content {
+    padding-top: 5vh;
+  }
+  table, tbody, th, td, tr, thead {
+    display: block;
+  }
+  td {
+    border: none;
+    position; relative;
+    white-space: normal;
+    text-align:left;
+    width: 94%;
+    border-bottom: 2px solid #e8eaed;
+    font-size: 30px; 
+  }
+  p {
+    font-size: 22px !important;
+  }
+  li {
+    font-size: 19px !important;
+  }
+  small {
+    font-size: 20px;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav a {
+    font-size: 40px;
+  }
+  .dropdown .dropbtn {
+    font-size: 40px;
+  }
+}

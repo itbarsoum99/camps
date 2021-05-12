@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Summer Camps</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta charset="utf-8">
+  </head>
+  <body class="home">
+    <nav class="topnav" id="myTopnav">
+      <a href="/" class="active">Home</a>
+      <a href="/me/">About Me</a>
+      <a href="/details/">Camp Details</a>
+      <a href="/programme/">Programme</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <main class="content">
+      <div class="box">
+        <p contentEditable id="text" role="textbox" aria-multiline="true" class="code"></p>
+
+      </div>
+    </main>
+<script>
+var i = 0;
+var txt = "<p>Coding camps to empower young people</p>";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+setTimeout(typeWriter,700);
+</script>
+<script src="/assets/main.js"></script>
+  </body>
+</html>
