@@ -345,12 +345,15 @@ hl {
 
 @media (pointer:coarse) {
   h1 { font-size: 10em; }
-  h2, .code { font-size: 5em !important; }
+  h2 { font-size: 5em; }
   h3, h4 { font-size: 3em; }
   h5 {
     font-size: 2.5em; 
     margin-block-start: 0em;
     margin-block-end: 0em;
+  }
+  .code {
+    font-size: 4em;
   }
   #join { font-size: 40px; }
   .box { 
