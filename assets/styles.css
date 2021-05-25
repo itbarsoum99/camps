@@ -355,7 +355,7 @@ hl {
   #join { font-size: 40px; }
   .box { 
     width: 75vw !important;
-    min-height: 550px;
+    min-height: 850px !important;
   }
   .hom { display: none; }
   .som { display: block; }
