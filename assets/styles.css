@@ -419,6 +419,6 @@ hl {
     font-size: 40px;
   }
   .active {
-    display: none;
+    display: none !important;
   }
 }
