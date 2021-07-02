@@ -150,6 +150,10 @@ hl {
   background-color: #ffff0085;
 }
 
+blur p {
+  opacity: 0.5 !important;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
